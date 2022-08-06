@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form-echo.php" method="get">
+    <p>1.ชื่อเต็ม/ย่อของสาขาวิชา</p>
+    <input type="text"name="name"pattern="[a-z]{1,20}">
+    <p>2.จำนวนเงินที่จะโอน</p>
+    <input type="number"name="money"min="1">
+    <p><input type="submit" value="Submit">
+    <p>3.อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย : <br>
+            1 <input type="text"name="food"><br>
+            2 <input type="text"name="food"><br>
+            3 <input type="text"name="food"><br>
+            4 <input type="text"name="food"><br>
+            5 <input type="text"name="food">
+    </p>
+    <p></p>4.ค่าไฟฟ้า 3 เดือนที่ผ่านมา</p>
+    <input type="number"name="bill"min="1">
+    <p>5.รหัสบัตรประชาชน</p>
+    <input type="text" id="id"  pattern="[0-9]{13}">
+    <p>6.ความพึงพอใจของหนังสือเล่มนี้ :
+        <input type="radio" id="ดีมาก" name="satisfied" value="ดีมาก">
+        <label for="ดีมาก">ดีมาก</label>
+        <input type="radio" id="ดี" name="satisfied" value="ดี">
+        <label for="ดี">ดี</label>
+        <input type="radio" id="ปานกลาง" name="satisfied" value="ปานกลาง">
+        <label for="ปานกลาง">ปานกลาง</label>
+        <input type="radio" id="พอใช้" name="satisfied" value="พอใช้">
+        <label for="พอใช้">พอใช้</label>
+        <input type="radio" id="แย่" name="satisfied" value="แย่">
+        <label for="แย่">แย่</label>
+    </p>
+    <p>7.อาการป่วย : <br>
+        <textarea rows="4" cols="30" name="illness"></textarea>
+    </p>
+    <p>8.ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่ :
+        <input type="radio" id="ได้รับ" name="vax" value="ได้รับ">
+        <label for="ได้รับ">ได้รับ</label>
+        <input type="radio" id="ไม่ได้รับ" name="vax" value="ไม่ได้รับ">
+        <label for="ไม่ได้รับ">ไม่ได้รับ</label>
+    </p>
+    <p>9.รหัสผ่าน :
+        <input type="password" name="password">
+    </p>
+    <p>10.เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน : <br>
+        เวลาเริ่มเข้าเรียน <input type="time">
+        เวลาสิ้นสุดการเรียน <input type="time">
+    </p>
+    <p>11.วันเวลาที่ต้องไปพบแพทย์ :
+        <input type="date">
+        <input type="time">
+    </p>
+    </form>
+</body>
+</html>
